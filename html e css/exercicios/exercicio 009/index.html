@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+    <style>
+        body{
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Código-Fonte / Pré-formatado</h2>
+    <p>o comando <code>cout << "Hello World" << endl;</code> é escrito em C++ tag usada: &lt;code&gt;</p>
+    <pre>
+        <code>
+int main(){
+    int num;
+    cout << "digite um numero: ";
+    cin >> num;
+    if((num % 2)== 0){
+        cout << "o numero é par" << endl;
+    }
+    else
+        cout << "o numero é impar" << endl;
+    retrun 0;
+}
+        </code>
+    </pre>
+    <p>para identar o codigo assim, usamos a tag &lt;pre&gt;</p>
+    <h2>Citações</h2>
+    <p>Como diria alguem: <q>O computador é um burro muito rapido</q> usando a tag &lt;q&gt;</p>
+    <h2>Citações completas</h2>
+    <p>Segundo Aristoteles</p>
+    <blockquote>
+        Nós somos aquilo que fazemos repetidamente
+        A excelência, então, não é um ato mas um hábito. 
+    </blockquote>
+    <p>usando a tag &lt;blockquote&gt;</p>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. É muito legal.</p>
+    <p>usando a tag &lt;abbr&gt;</p>
+</body>
+</html>
