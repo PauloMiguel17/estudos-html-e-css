@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(126, 250, 121);
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+p{
+    color: rgb(255, 0, 43);
+}
+
+.centro{
+    width: 300px;
+    background-color: black; 
+    border-radius: 10x;   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
