@@ -1,0 +1,16 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f17b7b;
+    font-family: sans-serif;
+}
+
+.caixa-centralizada {
+    width: 300px;
+    background-color: rgb(227, 240, 157);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
