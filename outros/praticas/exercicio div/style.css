@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(240, 200, 184);
+}
+
+div{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    display: inline-block;
+    background-color: rgb(125, 61, 185);
+    vertical-align: top;
+}
+
+.teste{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+div > ol{
+    display: none;
+}
+
+div:hover{
+    color: rgb(0, 0, 0);
+}
+
+div:hover > ol{
+    display: block;
+}
