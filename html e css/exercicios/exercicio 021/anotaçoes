@@ -1,0 +1,6 @@
+heigth = altura
+width= largura
+border = borda
+padding = preenchimento
+margin = margem (externa)
+outline = contorno (externo)

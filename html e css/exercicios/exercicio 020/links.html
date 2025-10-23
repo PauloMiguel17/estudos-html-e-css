@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+
+        /*  SELETORES PERSONALIZADOS
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = children
+        */
+
+
+        body{
+            font-family: sans-serif;
+        }
+        a{
+            color: rgb(255, 5, 5); /*cor padrao do link*/
+            text-decoration: none; /*sublinhado */
+            font-weight: bold;
+        }
+        a:visited{
+            color: darkred; /*se o link for visitado ele fica vermelho escuro*/
+        }
+        a:hover{
+            text-decoration: underline; /*quando passar o mouse em cima do link ele fica sublinhado*/
+            color: black;
+        }
+
+        a:active{
+            color: yellow; /*quando clicar no link ele fica amarelo*/
+        }
+        a::after{ /*depois de todo conteudo <a> (link) colocar um [link] isso é um pseudo elemento*/
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: red;
+        }
+        a::before{
+            content: '⇒';
+        }
+        .especial{
+            background-color: rgb(255, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul></ul>
+    <li><a class = "especial" href="https://github.com/PauloMiguel17/estudos-html-e-css">Repositorio GitHub</a></li>
+        <li><a href="https://www.youtube.com/@paulinmiguelgt2808">Youtube</a></li>
+        <li><a href="https://github.com/PauloMiguel17">GitHub</a></li>
+    </ul>
+</body>
+</html>
