@@ -2,9 +2,14 @@
 
 @font-face {
     font-family:'FonteAndroid' ;
-    src: url("fontes/fontes/idroid.otf") format('truetype');
-    font-weight: 2px;
+    src: url("arquivos/fontes/idroid.otf") format('truetype');
+    font-weight: normal;
     font-style: normal ;
+}
+
+img, video, iframe {
+  max-width: 100%; /* Garante que a imagem nunca seja mais larga que o container */
+  height: auto;    /* Mantém a proporção da imagem */
 }
 
 body{
@@ -19,36 +24,35 @@ header{
     flex-direction: column;
     align-items: center;
     background-image: linear-gradient(to bottom, rgb(110, 178, 111), rgb(9, 103, 9));
-    height: 180px;
-    width: 150;
     margin: auto;
-    padding: 20px 5px 5px 5px;
+    padding: 1.25rem 1rem; 
+    min-height: 8rem;
 }
 header h1{
     font-family: 'Arial Narrow Bold', sans-serif;
     margin: 0 auto;
     color: aliceblue;
-    font-weight: bolder;
-    font-size: 3em;
-    text-shadow: 2px 5px 15px black;
+    font-size: 2.2em;
+    text-shadow: 2px 3px 10px black;
 }
 header p{
     display: block;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 20px;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
     color: aliceblue;
     text-shadow: 2px 5px 15px black; ;
 }
 main{
     display: block;
     background-color: aliceblue;
-    width: 1200px;
-    height: 2000px;  
-    padding: 10px 20px;
+    max-width: 800px;
+    height: auto;  
+    padding: 10px 0.5rem;
     box-shadow: 1px 7px 20px 3px rgba(0, 0, 0, 0.621);
     justify-self: center;
+    margin: 0px auto;
 }
 main h1{
     font-style: normal;
@@ -56,13 +60,11 @@ main h1{
     font-size: 1.5em;
     font-weight: bolder;
     color: rgb(0, 89, 0);
-    height: 20px;
 
 }
 
 main p{
     font-family: Arial, Helvetica, sans-serif;
-    height: 50px;
     text-align: justify;
     text-indent: 20px;
     line-height: 1.5;
@@ -70,10 +72,12 @@ main p{
 }
 
 main h2{
-    font-size: 1em;
+    font-size: 0.9em;
     font-family: 'FonteAndroid';
     color: rgb(0, 89, 0);
     background-image: linear-gradient(to right, rgba(0, 128, 0, 0.373), rgba(255, 255, 255, 0.762));
+    text-align: justify;
+    
 }
 
 .destaqueverde{
@@ -95,4 +99,27 @@ a:hover{
     color: green;
     text-decoration: underline;
 
+}
+
+main img{
+    display: block;
+    margin: 0 auto;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;         
+  max-width: 800px;     
+  margin: 10px auto;   
+  padding-bottom: 56.25%; 
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
