@@ -2,7 +2,7 @@
 
 @font-face {
     font-family:'FonteAndroid' ;
-    src: url("arquivos/fontes/idroid.otf") format('truetype');
+    src: url('../arquivos/fontes/idroid.otf') format('opentype');
     font-weight: normal;
     font-style: normal ;
 }
@@ -13,7 +13,7 @@ img, video, iframe {
 }
 
 body{
-    background-color: rgb(237, 222, 201);
+    background-color:#c5ebd6;
     padding: 0%;
     margin: 0px;
 }
@@ -106,20 +106,45 @@ main img{
     margin: 0 auto;
 }
 
-.video-container {
-  position: relative;
-  width: 100%;         
-  max-width: 800px;     
-  margin: 10px auto;   
-  padding-bottom: 56.25%; 
-  height: 0;
-  overflow: hidden;
+div.video{
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 58.88%;
+    position: relative;
 }
 
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90% ;
+    height: 90% ;
+
 }
+
+aside {
+    background-color: rgb(149, 219, 173);
+
+}
+aside h3{
+    background-color: #4ead78;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ aside > ul{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+ }
+
+ footer{
+    background-color: #1b5836;
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+    text-align: center;
+ }
+ .linkfooter{
+    color: aliceblue;
+ }
