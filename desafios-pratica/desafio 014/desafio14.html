@@ -16,17 +16,26 @@
         }
         th{
             background-color: rgb(103, 103, 103);
-            padding: 10px;
             border: 1px solid black;
             color: aliceblue;
-        }
-        td{
-            border: 1px solid black;
+            padding: 10px;
         }
         td{
             background-color: aliceblue;
+            border: 1px solid black;
+            text-align: center;
         }
-
+        th.titulo{
+            background-color: white;
+            color: black;
+        }
+        th.meio{
+            text-align: left;
+        }
+        td.media{
+            background-color: rgb(103, 103, 103);
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -46,11 +55,48 @@
         </thead> 
         <tbody>
             <tr>
-                <th rowspan="4">Exatas</th>
-                <td>Matematica</td>
+                <th rowspan="4" class = "titulo">Exatas</th>
+                <td>Matemática</td>
                 <td>0</td>
                 <td>0</td>
                 <td>0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+                <td>Química</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+                <td>Biologia</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <th colspan="4" class = "meio">Média exatas</th>
+                <td class = "media">0.0</td>
+            </tr>
+            <tr>
+                <th rowspan="2" class = "titulo">Humanas</th>
+                <td>Hístoria</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <th colspan="4" class = "meio">Média Humanas</th>
+                <td class = "media">0.0</td>
             </tr>
         </tbody>
     </table>
