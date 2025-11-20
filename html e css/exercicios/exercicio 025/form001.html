@@ -13,7 +13,7 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action = "cadastro.php" autocomplete="off">
+    <form action = "cadastro.php" method="post" autocomplete="off"> <!--o metodo post deixa o envio seguro-->
         <p><label for="inome">Nome:</label> <!--LABEL É IMPORTANTE, RELACIONAR O RÓTULO COM O CONTEÚDO-->
              <input type="text" name="nome" id="inome"> </p>
         <p><label for="isobrenome">Sobrenome:</label>
@@ -22,3 +22,7 @@
     </form>
 </body>
 </html>
+
+<!--use get quando os dados nao forem sensiveis, ex: altura, idade... enviar dados com get tem o limite maximo de 3 mil bits, nao aceita envios de fotos, videos...-->
+
+<!--use post quando se tratar de dados sensiveis (mas lembre de https) dados com mais de 3 mil bites, envio de arquivos-->
