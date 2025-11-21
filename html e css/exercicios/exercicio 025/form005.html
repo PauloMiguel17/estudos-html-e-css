@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas"> <label for="isxmas">Masculino</label><br>
+            <input type= "radio" name="sexo" id="isxfem"> <label for="isxfem">Feminino</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esfut" id="ifut"> <label for="ifut">Futebol</label><br>
+            <input type="checkbox" name="esbas" id="ibas"> <label for="ibas">Basquete</label><br>
+            <input type="checkbox" name="esvol" id="ivol"> <label for="ivol">Vôlei</label> <br>
+            <input type="checkbox" name="esfis" id="ifis"> <label for="ifis">Fisiculturismo</label><br>
+            <input type="checkbox" name="esnat" id="inat"> <label for="inat">Natação</label><br>
+            <input type="checkbox" name="eska" id="ikar"> <label for="ikar">karatê</label><br>
+        </fieldset> 
+
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
+
+<!--botoes de rádio, apenas uma opção pode ser marcada (o name tem que ser o mesmo em cada alternativa)-->
+<!--botes de checkbox, pode ser múltipla escolha-->
