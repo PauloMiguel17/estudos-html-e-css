@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de envio</title>
+</head>
+<body>
+    <h1>Dados do Aluno</h1>
+    <form action="dados" autocomplete="off" method="post">
+        <p>
+        <label for="nome" id="inome">Nome: </label>
+        <input type= "text" required maxlength="35">
+        </p>
+        <p>
+            <label for="nota" id="inota">Nota: </label>
+            <input type= "number" step="0.1">
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
